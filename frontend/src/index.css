@@ -136,3 +136,319 @@ body {
   filter: blur(80px);
   opacity: 0.9;
 }
+
+
+/* teams */
+.card
+{
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.card:hover
+{
+  height: 450px;
+}
+.imgBx
+{
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover .imgBx
+{
+  width: 250px;
+  height: 250px;
+}
+.imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.card .content .details
+{
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(160px);
+}
+.card:hover .content .details
+{
+  transform: translateY(0px);
+}
+.card .content .details h2
+{
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+.card .content .details h2 span
+{
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.card .content .details .data
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.card .content .details .data img
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card .content .details .actionTxt
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card .content .details .actionTxt h3
+{
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+
+/* testimonial */
+
+.container
+{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.container .box
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 420px;
+  margin: 20px;
+  background: #121e27;
+}
+.container .box .content
+{
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.container .box .content .quote
+{
+  max-width: 48px;
+}
+.container .box .content p
+{
+  color: #fff;
+  padding: 20px 0;
+}
+.container .box .content .user
+{
+  max-width: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .box .content h3
+{
+  color: #33d1a0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.container .box .content h3 span
+{
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* contact */
+
+.contact-container 
+{
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000;
+}
+.contact-container .contactInfo
+{
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background: #18181B;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+.contact-container .contactInfo h2
+{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.contact-container .contactInfo ul.info
+{
+  position: relative;
+  margin: 20px 0;
+    bottom: 180px;
+}
+.contact-container .contactInfo ul.info li
+{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+.contact-container .contactInfo ul.info li span:nth-child(1)
+{
+  width: 30px;
+  min-width: 30px;
+}
+.contact-container .contactForm
+{
+  position: absolute;
+  padding: 70px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.contact-container .contactForm h2
+{
+  color: #18181B;
+  font-size: 24px;
+  font-weight: 500;
+}
+.contact-container .contactForm .formBox
+{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.contact-container .contactForm .formBox .inputBox
+{
+  position: relative;
+  margin-bottom: 30px;
+}
+.contact-container .contactForm .formBox .inputBox.w50
+{
+  width: 47%;
+}
+.contact-container .contactForm .formBox .inputBox.w100
+{
+  width: 100%;
+}
+.contact-container .contactForm .formBox .inputBox Input,
+.contact-container .contactForm .formBox .inputBox Textarea
+{
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.contact-container .contactForm .formBox .inputBox Textarea
+{
+  height: 120px;
+  position: relative;
+  top: 50px;
+}
+.contact-container .contactForm .formBox .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 5px;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s;
+  color: #111;
+}
+.contact-container .contactForm .formBox .inputBox Input:focus ~ span,
+.contact-container .contactForm .formBox .inputBox Input:valid ~ span,
+.contact-container .contactForm .formBox .inputBox Textarea:focus ~ span,
+.contact-container .contactForm .formBox .inputBox Textarea:valid ~ span
+{
+  transform: translateY(-30px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #A1A1AA;
+}
+.contact-container .contactForm .formBox .inputBox Button
+{
+  position: relative;
+  cursor: pointer;
+  background: #3B82F6;
+  color: #fff;
+  border: none;
+}
+.contact-container .contactForm .formBox .inputBox Button:hover
+{
+  background: #2563EB;
+}

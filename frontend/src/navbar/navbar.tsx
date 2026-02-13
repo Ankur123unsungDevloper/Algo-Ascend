@@ -6,10 +6,17 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
+import { useScrollTop } from "@/hooks/use-scroll-top";
+import { cn } from "@/lib/utils"
 
 export default function Navbar() {
+  const scrolled = useScrollTop();
+
   return (
-    <div className="w-full border-b border-gray-800">
+    <div className={cn(
+      "fixed w-full border-b border-gray-800 bg-[#0F1115]",
+      scrolled && "border-b shadow-sm"
+    )}>
       <div className="grid grid-cols-3">
         <img src="../src/assets/logo.png" alt="Logo" className="h-20 w-20 flex ml-12" />
         <NavigationMenu>

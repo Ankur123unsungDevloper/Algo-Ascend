@@ -4,9 +4,9 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function Hero() {
   return (
     <div className="mt-10">
-      <div className="absolute inset-0 flex justify-center items-center">
+      {/* <div className="absolute inset-0 flex justify-center items-center">
         <div className="blob mr-50"></div>
-      </div>
+      </div> */}
       <div className="ml-20 w-[60%] mt-50">
         <h1 className="text-8xl font-bold">
           Launchpad to tech excellence
@@ -23,7 +23,7 @@ export default function Hero() {
           size="lg"
           className="text-white font-medium text-xl bg-[#3B82F6] hover:bg-[#2563EB] hover:text-white self-center justify-self-start ml-12 mt-10">
           Explore Track
-          <MdOutlineKeyboardArrowRight className="h-10 w-10 justify-center items-center ml-5" />
+          <MdOutlineKeyboardArrowRight className="size-8 justify-center items-center ml-5" />
         </Button>
       </div>
     </div>
